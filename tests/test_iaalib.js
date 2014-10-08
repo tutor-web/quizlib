@@ -1,5 +1,3 @@
-// Bodge in what we need from libraries.js
-Array.last=Array.last||function(a){return 0<a.length?a[a.length-1]:null};
 var iaalib = new (require('../src/iaa.js'))();
 
 module.exports.setUp = function (callback) {
