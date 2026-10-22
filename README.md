@@ -5,9 +5,9 @@ from `tutorweb.quiz` so that the browser app and the sync backend can depend
 on one implementation rather than keeping two in step.
 
 * `answerchain.js` — the canonical encoding of an answer chain, and the
-  preimages that get hashed. Specified by `ANSWERCHAIN.rst` in
-  `tutorweb.quiz`. The caller does the hashing; this module only builds the
-  bytes that go into it.
+  preimages that get hashed. Specified by `ANSWERCHAIN.rst`, alongside it.
+  The caller does the hashing; this module only builds the bytes that go
+  into it.
 * `iaa.js` — item allocation and grading. `gradeAllocation()` is the number
   the client shows and the server has to arrive at independently.
 * `settings.js` — `getSetting()`, the lookup both of the above read their
