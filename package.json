@@ -1,0 +1,24 @@
+{
+  "name": "tutorweb-quizlib",
+  "version": "1.0.0",
+  "description": "Shared tutor-web quiz logic: answer-chain canonical encoding, item allocation and grading",
+  "homepage": "http://www.tutor-web.net/",
+  "license": "GPL-2.0",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node tests/run-tests.js"
+  },
+  "devDependencies": {
+    "knuth-shuffle": "~1.0.1",
+    "nodeunit": "~0.11.2",
+    "seedrandom": "~2.4.2"
+  },
+  "maintainers": [
+    {
+      "name": "Jamie Lentin",
+      "email": "jamie.lentin@shuttlethread.com"
+    }
+  ]
+}
