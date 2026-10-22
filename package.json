@@ -16,6 +16,10 @@
     "./src/settings.js": "./src/settings.js",
     "./package.json": "./package.json"
   },
+  "//": "node 12.17 is where require() started honouring an exports map, and this package has one",
+  "engines": {
+    "node": ">=12.17.0"
+  },
   "scripts": {
     "test": "node tests/run-tests.js"
   },
