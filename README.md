@@ -36,7 +36,7 @@ only find a module by its real path.
 The answer-chain vectors in `tests/answerchain-vectors.json` are a committed
 fixture, not a build product: they are shared with the Python implementation
 in `tutorweb.quizdb`, so if the two ever drift apart one of the suites breaks.
-Regenerate them only deliberately.
+Regenerate them only deliberately, with `npm run vectors`.
 
 ## Versioning
 

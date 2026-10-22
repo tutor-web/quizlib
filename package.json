@@ -21,7 +21,8 @@
     "node": ">=12.17.0"
   },
   "scripts": {
-    "test": "node tests/run-tests.js"
+    "test": "node tests/run-tests.js",
+    "vectors": "node scripts/genvectors.js"
   },
   "devDependencies": {
     "knuth-shuffle": "~1.0.1",
