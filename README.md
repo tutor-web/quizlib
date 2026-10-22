@@ -20,9 +20,13 @@ requires `settings.js`.
 
 There is no `main`; require the module you want by name:
 
-    var answerchain = require('tutorweb-quizlib/src/answerchain.js');
-    var IAA = require('tutorweb-quizlib/src/iaa.js');
-    var getSetting = require('tutorweb-quizlib/src/settings.js').getSetting;
+    var answerchain = require('tutorweb-quizlib/answerchain');
+    var IAA = require('tutorweb-quizlib/iaa');
+    var getSetting = require('tutorweb-quizlib/settings').getSetting;
+
+`tutorweb-quizlib/src/iaa.js` resolves as well, which is not redundant:
+browserify 15 predates `exports` and ignores it, so a bundler that old can
+only find a module by its real path.
 
 ## Tests
 

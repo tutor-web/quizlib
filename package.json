@@ -7,6 +7,15 @@
   "files": [
     "src"
   ],
+  "exports": {
+    "./answerchain": "./src/answerchain.js",
+    "./iaa": "./src/iaa.js",
+    "./settings": "./src/settings.js",
+    "./src/answerchain.js": "./src/answerchain.js",
+    "./src/iaa.js": "./src/iaa.js",
+    "./src/settings.js": "./src/settings.js",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "test": "node tests/run-tests.js"
   },
